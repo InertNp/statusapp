@@ -3,8 +3,8 @@ import { faSmile } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
 
 
-export const Post = ({value , onclick}) => {
-    const [text, SetText] = useState(value)
+export const Post = ({onclick}) => {
+    const [text, SetText] = useState("")
     const [postBool, setPostBool] = useState(true)
     
     const HandleTextChange = (e) => {
