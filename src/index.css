@@ -1,13 +1,126 @@
+@import url("https://fonts.google.com/specimen/Overpass");
+
+:root {
+  --primary: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --LowBlue: hsla(216, 12%, 54%, 0.1);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Overpass", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--VeryDarkBlue);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/*Header*/
+header {
+  background-color: var(--DarkBlue);
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .buttons {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  background-color: transparent;
+  border: none;
+}
+.icons {
+ 
+  height: 30px;
+  color: var(--primary);
+}
+.sideIcons {
+  width: 40px;
+  height: 25px;
+}
+.sideIcons:hover {
+  color: var(--primary);
+}
+main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post{
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+
+  height: 130px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.post .input{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+
+}
+.input input{
+  width: 80%;
+  height: 100%;
+  background-color: var(--LowBlue);
+  border: 1px solid var(--LightGrey);
+  border-radius: 10px;
+  color: var(--White);
+  font-size: 20px;
+  padding-left: 20px;
+}
+.send{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+.send button{
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  color: var(--White);
+  background-color:var(--LowBlue);;
+  border: 2px solid var(--primary);
+}
+.send button:hover{
+  color: var(--White);
+  background-color: var(--primary);
+  border: none;
+}
+.send button:disabled,
+.send button[disabled]{
+  color: var(--White);
+  background-color:var(--DarkBlue) ;
+  border: 2px solid var(--MediumGrey);
+}
+
+
+
+.posticons{
+  color: white;
+  height: 20px;
+}
+.posticons:hover{
+  color: var(--primary);
 }
