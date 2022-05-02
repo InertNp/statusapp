@@ -6,7 +6,7 @@ export const fakedata = [
         id: uuidv4(),
         votes: 14,
         name: "Abhishek",
-        thought: "Sint sunt tempor velit laborum velit est ea labore commodo deserunt Lorem. Exercitation Lorem enim nisi exercitation ullamco. Aute ut fugiat elit ut quis qui dolore. Do dolor do veniam dolore mollit. Ea sint excepteur commodo anim elit. Deserunt elit eu consequat proident consectetur ea. Sunt non do nulla culpa ad quis consequat aliquip non.",
+        thought: "Sint sunt tempor velit laborum velit est ea labore commodo deserunt Lorem. ",
         date: completeDate.toLocaleDateString('en-us', options),
     },
     {

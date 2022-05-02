@@ -75,7 +75,8 @@ main {
   display: flex;
   justify-content: center;
 }
-.input input {
+.input textarea {
+  resize: none;
   width: 80%;
   height: 100%;
   background-color: var(--LowBlue);
@@ -244,6 +245,12 @@ main {
   background-color: var(--primary);
   border: none;
 }
+.edit:disabled,
+.edit[disabled]{
+  color: var(--White);
+  background-color: var(--DarkBlue);
+  border: 2px solid var(--MediumGrey);
+}
 .delete{
   /* background-color: aliceblue; */
   width: 100%;
@@ -260,3 +267,21 @@ main {
   cursor: pointer;
 }
 /*Edit screen*/
+
+.edit-input{
+  width: 90%;
+  height: 100px;
+  resize: none;
+  background-color: var(--LowBlue);
+  border: 1px solid var(--LightGrey);
+  border-radius: 10px;
+  color: var(--White);
+  font-size: 20px;
+  padding-left: 20px;
+}
+.input-parent{
+  /* background-color: aliceblue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
