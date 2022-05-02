@@ -10,19 +10,18 @@ export const Thoughts = ({ onclick , deleteOption , data }) => {
     </div>
 }
 
-
-
-
 const ThoughtLoad = ({ externaldata, onclick, deleteOption }) => {
   const add = [externaldata.id , "add"] ;
   const sub = [externaldata.id , "sub"] ;
   return <div className="container">
+        <div className="delete" ><p onClick={(e) => { deleteOption(externaldata.id) }}>X</p></div>
         <div className="text">
-            <div className="delete" onClick={(e) => { deleteOption(externaldata.id) }}>X</div>
+        
             <div className="author">
                 <FontAwesomeIcon icon={faUser} className="img" />
                 <p className="name">{externaldata.name}</p>
             </div>
+            
             <p>{externaldata.thought}</p>
 
             <div className="state">
